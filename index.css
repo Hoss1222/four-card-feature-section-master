@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(238, 239, 240, 0.377);
+}
+.intro {
+    text-align: center;
+    padding: 2% 33%;
+}
+.t1 {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+.t2 {
+    color: hsl(234, 12%, 34%);
+    margin-top: -20px;
+}
+.intro p {
+    font-weight: 400;
+    font-size: 13px;
+    color: hsl(229, 6%, 66%);
+    margin-top: -10px;
+}
+.cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr ;
+    margin-top: -100px;
+    grid-gap: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.d1, .d2, .d3 {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.d2 {
+    justify-content: space-around;
+}
+.card {
+    width: 240px;
+    height: 170px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+   
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: bottom 20px right 20px;
+}
+.card1 {
+    background-image: url(https://svgshare.com/i/XHZ.svg);
+   
+
+}
+.card2 {
+    background-image: url(https://svgshare.com/i/XG9.svg);
+    margin-top: 100px;
+}
+.card3 {
+    background-image: url(https://svgshare.com/i/XGN.svg);
+    margin-bottom: 120px;
+}
+.card4 {
+    background-image: url(https://svgshare.com/i/XH9.svg);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    width: 240px;
+    height: 3px;
+    border-radius: 8px 8px 0px 0px ;
+    margin-top: -300;
+    background-color:  hsl(180, 62%, 55%);
+}
+.card2::before {
+    background-color: hsl(0, 78%, 62%);
+
+}
+.card3::before {
+    background-color: hsl(34, 97%, 64%);
+
+}
+.card4::before {
+    background-color:hsl(212, 86%, 64%);
+
+}
+h5 {
+    margin-left: 20px;
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+.cont  p {
+    font-size: x-small;
+    margin-left: 20px;
+    margin-top: -15px;
+    color: hsl(229, 6%, 66%);
+}
+@media (max-width: 375px) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    
+    }
+    .intro {
+        padding: 10px;
+        margin-top: 30px;
+    }
+    .d1 {
+        height: 100%;
+        margin-top: 130px;
+
+    }
+    .d2 {
+        height: 100%;
+    }
+    .d3 {
+        height: 100%;
+        margin-top: -120px;
+    }
+    .card2 {
+        margin: 0;
+    }
+    .card3 {
+        margin-top: 20px;
+    }
+    .card4 {
+
+    }
+
+}
+.credit {
+    text-align: center;
+    margin:  5px 0 px 60px 0px;
+    color: rgb(114, 114, 114);
+}
